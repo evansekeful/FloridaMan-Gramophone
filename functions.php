@@ -64,14 +64,5 @@ function add_class_to_excerpt( $excerpt ) {
     return str_replace('<p', '<p class="card-title"', $excerpt);
 }
 
-// Render navbar based on page type
-function render_navbar() {
-  if (is_front_page()) {
-    echo file_get_contents("navbar-frontpage.php");
-  }
-  else {
-    echo file_get_contents("navbar.php");
-  }
-}
 
 ?>
