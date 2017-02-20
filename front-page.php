@@ -42,7 +42,7 @@
             <?php if ( dynamic_sidebar( 'front-left' ) ); ?>
             </div>
 
-            <!-- widget area 2 -->	
+            <!-- widget area 2 -->
             <div class="col-md-4">
             <?php if ( dynamic_sidebar( 'front-center' ) ); ?>
             </div>

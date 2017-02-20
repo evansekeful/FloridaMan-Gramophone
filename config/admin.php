@@ -84,7 +84,7 @@ add_action( 'wp_dashboard_setup', 'clean_dashboard' );
 
 function admin_footer()
 {
-    echo "Built with <a href='https://github.com/pjhampton/BigBooty' target='_blank'>BigBooty</a>, the Bootstrap starter theme.";
+    echo "Built by Solnimbus with <a href='https://github.com/evansekeful/FloridaMan-Gramophone' target='_blank'>Gramophone</a>, a Bootstrap theme.";
 }
 add_filter('admin_footer_text', 'admin_footer');
 

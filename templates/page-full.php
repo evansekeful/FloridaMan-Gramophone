@@ -6,7 +6,7 @@
  * //templates/page-full.php
  *******************************************************************************
  *
- * A full width page template.
+ * An example full width page template.
  *
  * @author
  * @copyright
