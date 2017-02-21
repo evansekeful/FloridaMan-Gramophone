@@ -64,7 +64,7 @@ function add_class_to_excerpt( $excerpt ) {
     return str_replace('<p', '<p class="card-title"', $excerpt);
 }
 
-// Render navbar based on page type
+// Render navbar based on page type TODO: add store navbar
 function render_navbar() {
   if (is_front_page()) {
     get_template_part("navbar", "frontpage");
