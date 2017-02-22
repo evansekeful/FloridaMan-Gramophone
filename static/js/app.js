@@ -1,3 +1,4 @@
+// Sets body padding to footer height dynamically to prevent content overlap
 function setFooter() {
   var footerHeight = jQuery('.footer').height();
   jQuery('body').css('padding-bottom', footerHeight + 'px');
@@ -26,7 +27,7 @@ jQuery(document).ready(function() {
 
 });
 
-jQuery( window ).resize(function() {
+jQuery(window).resize(function() {
 
   if (jQuery('.footer').length) {
     setFooter();
