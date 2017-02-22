@@ -1,6 +1,23 @@
 /*****************************
- ~~ html specific
+ ~~ DOM Specific
 *****************************/
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
 
 img {
     display: block;
@@ -9,6 +26,12 @@ img {
 }
 
 footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.copyright {
     background: #2a2730;
     padding: 20px 0;
 }
@@ -156,7 +179,7 @@ a img.aligncenter {
 }
 
 /*****************************
- ~~ Blog (home)
+ ~~ Blog: home
 *****************************/
 
 article.post {
@@ -207,7 +230,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ Post Format: Aside
+ ~~ Post Format: aside
 *****************************/
 
 .post_format-post-format-aside {
@@ -239,7 +262,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ Post Format: Gallery
+ ~~ Post Format: gallery
 *****************************/
 
 @media (max-width:768px){
@@ -268,7 +291,49 @@ blockquote p {
 }
 
 /*****************************
- ~~ admin
+~~ Post Format: video
+*****************************/
+
+.video-wrapper {
+    width: 100%;
+    max-width: 720px;
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.video-wrapper .video-inner {
+    width: 100%;
+    padding: 0 0 56.25% 0;
+    position: relative;
+}
+
+.video-wrapper .video-inner iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*****************************
+~~ Posts Display (list / grid)
+*****************************/
+
+#display {
+    margin: 0 0 40px 8px;
+}
+
+#display a {
+    font-size: 16px;
+}
+
+div#post-metadata {
+    display: none;
+}
+
+/*****************************
+ ~~ Admin
 *****************************/
 
 .admin-bar .navbar-fixed-top {
@@ -276,7 +341,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ widgets
+ ~~ Widgets
 *****************************/
 
 .widgets {
@@ -298,7 +363,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ widgets (calendar)
+ ~~ Widgets: calendar
 *****************************/
 
 table#wp-calendar {
@@ -311,7 +376,7 @@ table#wp-calendar caption {
 }
 
 /*****************************
- ~~ widgets (tag cloud)
+ ~~ Widgets: tag cloud
 *****************************/
 
 .tagcloud a {
@@ -324,7 +389,7 @@ table#wp-calendar caption {
 }
 
 /*****************************
- ~~ footer (widgets)
+ ~~ Footer: widgets
 *****************************/
 
 #copyright p {
@@ -336,7 +401,7 @@ table#wp-calendar caption {
 }
 
 /*****************************
- ~~ 404 (error)
+ ~~ Error: 404
 *****************************/
 
 body.error404 {
@@ -353,7 +418,7 @@ body.error404 {
 }
 
 /*****************************
-~~ WooCommerce (Catalog)
+~~ WooCommerce: catalog
 *****************************/
 
 .col-item {
@@ -374,7 +439,7 @@ body.error404 {
 }
 
 /*****************************
-~~ WooCommerce (Tabs)
+~~ WooCommerce: tabs
 *****************************/
 
 .tabs {
@@ -382,7 +447,7 @@ body.error404 {
 }
 
 /*****************************
-~~ WooCommerce (Site Wide Notice)
+~~ WooCommerce: site wide notice
 *****************************/
 
 p.demo_store {
@@ -407,7 +472,7 @@ p.demo_store {
 }
 
 /*****************************
-~~ Product grid
+~~ Product Grid
 *****************************/
 
 .card {
@@ -453,46 +518,4 @@ p.demo_store {
     .woocommerce-ordering {
         margin-right: 20px;
     }
-}
-
-/*****************************
-~~ Video (Post format)
-*****************************/
-
-.video-wrapper {
-    width: 100%;
-    max-width: 720px;
-    float: none;
-    display: block;
-    margin: 0 auto;
-}
-
-.video-wrapper .video-inner {
-    width: 100%;
-    padding: 0 0 56.25% 0;
-    position: relative;
-}
-
-.video-wrapper .video-inner iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/*****************************
-~~ Posts display (list / grid)
-*****************************/
-
-#display {
-    margin: 0 0 40px 8px;
-}
-
-#display a {
-    font-size: 16px;
-}
-
-div#post-metadata {
-    display: none;
 }

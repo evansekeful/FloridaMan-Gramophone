@@ -1,4 +1,13 @@
+function setFooter() {
+  var footerHeight = jQuery('.footer').height();
+  jQuery('body').css('padding-bottom', footerHeight + 'px');
+}
+
 jQuery(document).ready(function() {
+
+    if (jQuery('.footer').length) {
+      setFooter();
+    }
 
     jQuery('#list').click(function(event){
         event.preventDefault();
@@ -14,5 +23,13 @@ jQuery(document).ready(function() {
         jQuery('#post-metadata').hide();
         jQuery("[id=post-image]").show();
      });
+
+});
+
+jQuery( window ).resize(function() {
+
+  if (jQuery('.footer').length) {
+    setFooter();
+  }
 
 });

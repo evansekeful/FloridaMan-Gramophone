@@ -19,45 +19,46 @@
 **/
 ?>
 
-<section class="widgets">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-4">
-                <?php if ( !dynamic_sidebar( 'footer_left' ) ): ?>
-                <h4 class="text-center">Sidebar (Page)</h4>
-                <p>Oh! No Sidebar?</p>	
-                <?php endif; ?>
-            </div>
+<footer class="footer">
+    <section class="widgets">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <?php if ( !dynamic_sidebar( 'footer_left' ) ): ?>
+                    <h4 class="text-center">Sidebar (Page)</h4>
+                    <p>Oh! No Sidebar?</p>
+                    <?php endif; ?>
+                </div>
 
-            <div class="col-12 col-sm-4">
-                <?php if ( !dynamic_sidebar( 'footer_center' ) ): ?>
-                <h4 class="text-center">Sidebar (Page)</h4>
-                <p>Oh! No Sidebar?</p>	
-                <?php endif; ?>
-            </div>
+                <div class="col-12 col-sm-4">
+                    <?php if ( !dynamic_sidebar( 'footer_center' ) ): ?>
+                    <h4 class="text-center">Sidebar (Page)</h4>
+                    <p>Oh! No Sidebar?</p>
+                    <?php endif; ?>
+                </div>
 
-            <div class="col-12 col-sm-4">
-                <?php if ( !dynamic_sidebar( 'footer_right' ) ): ?>
-                <h4 class="text-center">Sidebar (Page)</h4>
-                <p>Oh! No Sidebar?</p>	
-                <?php endif; ?>
+                <div class="col-12 col-sm-4">
+                    <?php if ( !dynamic_sidebar( 'footer_right' ) ): ?>
+                    <h4 class="text-center">Sidebar (Page)</h4>
+                    <p>Oh! No Sidebar?</p>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-    <div class="container">
-        <div vlass="row">
-            <div class="col-12 text-center" id="copyright">
-                <p class="text-muted">&copy; 
-                <a href="<?php echo esc_url( home_url() ); ?>">
-                <?php bloginfo('name'); ?></a>
-                <?php echo date('Y'); ?>. All Rights Reserved
-                </p>
+    </section>
+    <section class="copyright" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="container">
+            <div vlass="row">
+                <div class="col-12 text-center" id="copyright">
+                    <p class="text-muted">&copy;
+                    <a href="<?php echo esc_url( home_url() ); ?>">
+                    <?php bloginfo('name'); ?></a>
+                    <?php echo date('Y'); ?>. All Rights Reserved
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </footer>
 
 <?php wp_footer(); ?>
