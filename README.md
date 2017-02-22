@@ -1,5 +1,5 @@
-<h1>A Bossy Gramophone</h1>
-<p>This is an adaptation as a labor of love for the website, Florida Man Photography. I have, or am in the process of, adding features specifically to enhance a photographer's web site and store. Some of my design <em>enhancements</em> (ie, opinions) on the original theme should have application to other Wordpress sites.</p>
+<h1>A  Gramophone</h1>
+<p>This is an adaptation as a labor of love for the website, Florida Man Photography. I have, or am in the process of, adding features specifically to enhance a photographer's web site and store.</p>
 <h2>Minimally Opinionated Improvements</h2>
 <ul>
 <li>Conditionally rendered navbars</li>
