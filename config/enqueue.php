@@ -15,6 +15,26 @@
  * @version
 **/
 
+/**
+ *******************************************************************************
+ * theme_fonts
+ *******************************************************************************
+ *
+ *
+ *
+ *
+**/
+
+function theme_fonts()
+{
+
+    wp_enqueue_style( 'lobster_font', 'https://fonts.googleapis.com/css?family=Lobster', false ); // cursive
+    wp_enqueue_style( 'poppins_font', 'https://fonts.googleapis.com/css?family=Poppins', false ); // sans-serif
+    wp_enqueue_style( 'ssp_font', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i', false ); // sans-serif
+
+    // Add more...
+}
+add_action( 'wp_enqueue_scripts', 'theme_fonts' );
 
 /**
  *******************************************************************************

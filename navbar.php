@@ -3,7 +3,14 @@
 
         <div class="d-flex justify-content-between hidden-lg-up">
             <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>">
-            <?php bloginfo( 'name' ); ?>
+              <?php
+                if ( function_exists( 'the_custom_logo' ) ) {
+                    the_custom_logo();
+                  }
+                else {
+                    bloginfo( 'name' );
+                  }
+              ?>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,4 +39,4 @@
             </ul>
         </div>
     </nav>
-</header> 
+</header>

@@ -21,12 +21,19 @@
 
 <?php get_header(); ?>
 
-<div class="jumbotron jumbotron-fluid">
-
-    <div class="container">
-        <h1><?php echo get_bloginfo('name'); ?></h1>
-        <p><?php echo get_bloginfo('description'); ?></p>
-        </div>
+    <div class="jumbotron-fluid frontpage header">
+        <?php if ( get_header_image() ) : ?>
+            <div>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+                </a>
+            </div>
+        <?php else: ?>
+              <div class="container">
+                  <h1><?php echo get_bloginfo('name'); ?></h1>
+                  <p><?php echo get_bloginfo('description'); ?></p>
+              </div>
+        <?php endif; ?>
     </div>
 
     <?php render_navbar(); ?>
@@ -44,7 +51,7 @@
             <?php if ( dynamic_sidebar( 'front-left' ) ); ?>
             </div>
 
-            <!-- widget area 2 -->	
+            <!-- widget area 2 -->
             <div class="col-md-4">
             <?php if ( dynamic_sidebar( 'front-center' ) ); ?>
             </div>

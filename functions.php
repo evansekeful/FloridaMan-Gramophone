@@ -69,12 +69,13 @@ function add_class_to_excerpt( $excerpt ) {
 
 // Render navbar based on page type TODO: add store navbar
 function render_navbar() {
-  if (is_front_page()) {
+  if ( is_front_page() ) {
     get_template_part("navbar", "frontpage");
   }
   else {
     get_template_part("navbar");
   }
 }
+
 
 ?>
