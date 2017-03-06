@@ -178,6 +178,19 @@ a img.aligncenter {
 }
 
 /*****************************
+ ~~ Front Page
+*****************************/
+
+.header.frontpage {
+  background: none;
+  margin: 0;
+}
+
+.navbar.frontpage {
+  margin-bottom: 1rem;
+}
+
+/*****************************
  ~~ Blog: home
 *****************************/
 

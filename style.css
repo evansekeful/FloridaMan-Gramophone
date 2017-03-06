@@ -13,3 +13,64 @@ Text Domain: woocommerce
 Gramophone, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+
+/*****************************
+ ~~ Site Wide
+*****************************/
+html, body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    color: #218C8D;
+}
+
+a:hover, a:active {
+    color: #EF7126 !important;
+    text-shadow: .5px 1px 1px #CCC;
+}
+
+.navbar {
+  margin: 0 -10rem;
+  padding: .5rem 10rem;
+  background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: #218C8D;
+    font-weight: bolder;
+}
+
+/*****************************
+ ~~ Special Classes
+*****************************/
+
+.transparent {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+/*****************************
+ ~~ Front Page
+*****************************/
+
+.frontpage .navbar-nav {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.frontpage.header > .container {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 15px;
+}

@@ -1,6 +1,5 @@
-<section class="navbar navbar-light navbar-toggleable-md bd-navbar">
-    <nav class="container">
-
+<section class="navbar navbar-light navbar-toggleable-md bd-navbar frontpage transparent">
+    <nav class="container-fluid">
         <div class="collapse navbar-collapse" id="bd-main-nav">
             <ul class="nav navbar-nav mr-auto">
 
@@ -17,6 +16,6 @@
                 ?>
 
             </ul>
-        </div>
+      </div>
     </nav>
 </section>
