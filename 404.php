@@ -6,7 +6,7 @@
  *
  * The 404 template (Not found)
  *
- * CODEX REF 
+ * CODEX REF
  * https://codex.wordpress.org/Creating_an_Error_404_Page
  *
  * @author
@@ -19,8 +19,10 @@
 **/
 ?>
 
+<?php get_header(); ?>
+
 <div class="col-md-12">
-    <div class="text-center">
+    <div class="text-center error-page">
 
         <h1>404</h1>
 

@@ -20,21 +20,17 @@
 
 <?php get_header(); ?>
 
-<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-    <div class="container">
-        <div vlass="row">
-            <div class="col-12 text-center" id="copyright">
-                <p class="text-muted">&copy;
-                <a href="<?php echo esc_url( home_url() ); ?>">
-                <?php bloginfo('name'); ?></a>
-                <?php echo date('Y'); ?>. All Rights Reserved
-                </p>
-            </div>
+<div class="jumbotron jumbotron-fluid error-page">
+    <div class="container text-center error-page">
+        <h1><?php the_title(); ?></h1>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-justify">
+
+            <?php the_content(); ?>
+
         </div>
     </div>
-</footer>
-
-<?php wp_footer(); ?>
-
-</body>
-</html>
+</div>

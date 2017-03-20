@@ -413,12 +413,14 @@ table#wp-calendar caption {
 }
 
 /*****************************
- ~~ Error: 404
+ ~~ Error
 *****************************/
-
-body.error404 {
-    background: #563D7C;
-    color: #f7f7f7;
+.jumbotron.error-page {
+  background: none;
+}
+.error-page h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3.5em;
 }
 
 /*****************************
