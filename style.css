@@ -61,6 +61,17 @@ a:hover, a:active {
 }
 
 /*****************************
+ ~~ Error
+*****************************/
+.jumbotron.error-page {
+  background: none;
+}
+.error-page h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3.5em;
+}
+
+/*****************************
  ~~ Front Page
 *****************************/
 
