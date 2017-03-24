@@ -190,6 +190,11 @@ a img.aligncenter {
   margin-bottom: 1rem;
 }
 
+.navbar-nav .nav-item {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
 /*****************************
  ~~ Blog: home
 *****************************/
