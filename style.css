@@ -36,7 +36,7 @@ a {
 
 a:hover, a:active {
     color: #eb6608 !important;
-    text-shadow: .25px .5px .5px #473e3f;
+    text-shadow: 0 0 2px #9c9b9b;
 }
 
 .navbar {
