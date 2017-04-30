@@ -1,9 +1,9 @@
 <?php
 /**
  *******************************************************************************
- * Template Name: Full Page
+ * Template Name: Full Page with Jumbotron
  *******************************************************************************
- * //templates/page-full.php
+ * //templates/page-full-jumbotron.php
  *******************************************************************************
  *
  * A full width page template.
@@ -19,6 +19,8 @@
 ?>
 
 <?php get_header(); ?>
+
+<?php render_navbar(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
