@@ -44,6 +44,17 @@ function required_plugins()
             'external_url'          => '',
         ),
 
+        array(
+            'name'                  => 'FooGallery – Image Gallery WordPress Plugin',
+            'slug'                  => 'foogallery',
+            'source'                => 'https://downloads.wordpress.org/plugin/foogallery.zip',
+            'required'              => false,
+            'version'               => '1.2.18',
+            'force_activation'      => true,
+            'force_deactivation'    => false,
+            'external_url'          => 'https://fooplugins.com/plugins/foogallery/',
+        ),
+
         // add more...
     );
 
