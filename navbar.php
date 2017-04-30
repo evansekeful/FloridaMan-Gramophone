@@ -1,4 +1,4 @@
-<header class="navbar navbar-light navbar-toggleable-md bd-navbar">
+<header class="navbar navbar-light navbar-toggleable-md bd-navbar transparent">
     <nav class="container">
 
         <div class="d-flex justify-content-between hidden-lg-up">

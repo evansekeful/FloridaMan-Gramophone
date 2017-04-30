@@ -31,12 +31,12 @@ p, a {
 }
 
 a {
-    color: #218C8D;
+    color: #002f63;
 }
 
 a:hover, a:active {
-    color: #EF7126 !important;
-    text-shadow: .5px 1px 1px #CCC;
+    color: #eb6608 !important;
+    text-shadow: .25px .5px .5px #473e3f;
 }
 
 .navbar {
@@ -47,7 +47,7 @@ a:hover, a:active {
 
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Poppins', sans-serif;
-    color: #218C8D;
+    color: #002f63;
     font-weight: bolder;
 }
 
