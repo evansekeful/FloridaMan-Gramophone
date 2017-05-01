@@ -84,8 +84,8 @@
 
             <?php endwhile; else: ?>
             </div>
-                <div class="page-header">
-                <h1>No posts as yet.</h1>
+                <div class="page-header error-page">
+                <h1>Coming Soon!</h1>
                 </div>
 
                 <p>No content is appearing for this page!</p>
