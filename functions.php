@@ -44,7 +44,7 @@ require_once( 'config/styling.php' );
 // Theme Recommended & Required Plugins
 require_once( 'config/required_plugins.php' );
 
-// Theme Customizer Options
+// Theme Options
 require_once ( 'config/customizer.php' );
 
 // Theme custom post types
