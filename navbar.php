@@ -1,28 +1,21 @@
-<header class="navbar navbar-light navbar-toggleable-md bd-navbar transparent">
-    <nav class="container">
-
-        <div class="d-flex justify-content-between hidden-lg-up">
-            <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>">
-              <?php
-                if ( function_exists( 'the_custom_logo' ) ) {
-                    the_custom_logo();
-                  }
-                else {
-                    bloginfo( 'name' );
-                  }
-              ?>
-            </a>
+<nav class="navbar navbar-light navbar-toggleable-md bd-navbar clearfix transparent">
+      <div class="container-fluid">
+        <div class="navbar-header container-fluid">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
+
+            <?php if ( ! has_custom_logo() ) { ?>
+                <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+            <?php }
+                  else {
+                    the_custom_logo();
+                  } ?>
         </div>
+      </div>
 
-        <div class="collapse navbar-collapse" id="bd-main-nav">
+        <div class="collapse navbar-collapse nav navbar-nav" id="bd-main-nav">
             <ul class="nav navbar-nav mr-auto">
-
-                <li class="nav-item active hidden-md-down">
-                    <a class="nav-item nav-link active" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
-                </li>
 
                 <?php
                     wp_nav_menu( array(
@@ -37,6 +30,6 @@
                 ?>
 
             </ul>
-        </div>
-    </nav>
-</header>
+        </nav>
+      </div>
+</nav>
