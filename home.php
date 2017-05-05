@@ -47,7 +47,7 @@
             <article class="item col-12 col-md-6 col-lg-4" id="post-<?php the_ID(); ?>">
                 <div class="card">
                     <a href="<?php the_permalink(); ?>">
-                        <img class="group list-group-image" src="http://placehold.it/400x300/ECEEEF/373q3c" alt="" id="post-image" />
+                        <img class="group list-group-image" src="<?php the_post_thumbnail_url( 'card' ); ?>" alt="" id="post-image" />
                     </a>
 
                     <div <?php post_class(); ?>>

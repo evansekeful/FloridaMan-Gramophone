@@ -51,3 +51,7 @@ function bootstrap_password_form() {
 };
 
 add_filter( 'the_password_form', 'bootstrap_password_form' );
+
+// Custom Image Sizes
+add_image_size( 'tile', 350, 400 );
+add_image_size( 'card', 400, 300 );
