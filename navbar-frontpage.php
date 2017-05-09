@@ -1,6 +1,6 @@
 <header>
   <!-- Mobile Nav -->
-  <section class="navbar navbar-light hidden-md-up navbar-toggleable-sm frontpage transparent bd-navbar">
+  <section class="navbar navbar-light hidden-md-up navbar-toggleable-sm frontpage bg-faded bd-navbar">
     <nav class="container">
 
         <div class="d-flex justify-content-between">
@@ -47,7 +47,7 @@
   </div>
 
   <!-- Desktop Nav -->
-  <section class="navbar navbar-light hidden-sm-down flex-row bd-navbar frontpage transparent">
+  <section class="navbar navbar-light hidden-sm-down flex-row bd-navbar frontpage bg-faded">
     <nav class="container-fluid">
 
                 <?php
