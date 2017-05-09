@@ -36,7 +36,7 @@ a {
 
 a:hover, a:active {
     color: #eb6608 !important;
-    text-shadow: 0 0 2px #9c9b9b;
+    text-shadow: 0 0 2px #ffffff;
 }
 
 .navbar {
@@ -49,6 +49,14 @@ a:hover, a:active {
     color: #002f63;
     font-weight: bolder;
 }
+
+/*****************************
+ ~~ Front Page
+*****************************/
+.sow-social-media-button {
+  margin: 1rem 1rem !important;
+}
+
 
 /*****************************
  ~~ Special Classes
@@ -100,4 +108,8 @@ a:hover, a:active {
 .frontpage .navbar-nav .nav-item {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
+}
+
+#signature-logo {
+  padding: 3.5rem 0;
 }
